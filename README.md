@@ -148,19 +148,19 @@ No external Python packages are required.
 
 The application retrieves and displays all patient records stored in the SQLite database.
 
-![Patient Records]("C:\Users\kostas\Pictures\Screenshots\scr1.png")
+![Patient Records](screenshots/scr1.png)
 
 ### Doctors and Appointments
 
 The application uses SQL joins to display doctors with their departments and appointments with readable patient and doctor information.
 
-![Doctors and Appointments]("C:\Users\kostas\Pictures\Screenshots\scr2.png")
+![Doctors and Appointments](screenshots/scr2.png)
 
 ### Patient Search and Statistics
 
 Users can search for patients by first name or last name and view summary statistics for the hospital database.
 
-![Patient Search and Statistics]("C:\Users\kostas\Pictures\Screenshots\scr3.png")
+![Patient Search and Statistics](screenshots/scr3.png)
 
 ---
 
