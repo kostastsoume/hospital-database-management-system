@@ -20,6 +20,50 @@ This project demonstrates the design and implementation of a normalized healthca
 
 ## Database Structure
 
+```mermaid
+erDiagram
+    DEPARTMENTS ||--o{ DOCTORS : includes
+    PATIENTS ||--o{ APPOINTMENTS : schedules
+    DOCTORS ||--o{ APPOINTMENTS : attends
+
+    PATIENTS {
+        INTEGER patient_id PK
+        TEXT first_name
+        TEXT last_name
+        TEXT birth_date
+        TEXT gender
+        TEXT phone
+        TEXT email
+        TEXT address
+    }
+
+    DEPARTMENTS {
+        INTEGER department_id PK
+        TEXT department_name
+        INTEGER floor
+    }
+
+    DOCTORS {
+        INTEGER doctor_id PK
+        TEXT first_name
+        TEXT last_name
+        TEXT specialty
+        TEXT phone
+        TEXT email
+        INTEGER department_id FK
+    }
+
+    APPOINTMENTS {
+        INTEGER appointment_id PK
+        INTEGER patient_id FK
+        INTEGER doctor_id FK
+        TEXT appointment_date
+        TEXT appointment_time
+        TEXT reason
+        TEXT status
+    }
+```
+
 The system consists of four main entities:
 
 - Patients
